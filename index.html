@@ -2,41 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Roman Fitness GYM</title>
 </head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        color: aqua;
+        margin: 0px;
+        padding: 0px;
+        background: url(/fitness.jpg);
+    }
+    .left{
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        display: inline-block;
+    }
+    .left img{
+        width: 130px;
+    }
+    .left div{
+        text-align: center;
+        font-size: large;
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 1px auto;
+    }
+    .right{
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        display: inline-block;
+    border: 2px solid cyan;
+    }
+    .navbar{
+    display: inline-block;   
+    }
+    .navbar li{
+    display: inline-block;   
+    }
+    .navbar li a{
+        color: cyan;
+        text-decoration: none;
+        padding: 34px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+    }
+    .h1{
+        position: absolute;
+        padding: auto;
+    }
+    .section-inner{
+    }
+</style>
 <body>
-    <header>
-        <h1>SIDDHARTH SINGH PORTFOLIO</h1>
-        <p>Data Analyst well versed in SQL, Python, R, Tableau, Power BI and Excel.
-        </p>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>- Hi, I’m Siddharth Singh.
--  I’m a Data Analyst.
--  I’m well versed in Power bi, Python, Excel, Mysql.
--  I’m looking to collaborate with a company where i can show my skills and learn new things.
--  How to reach me
-- siddhsingh650@gmail.com
-- Siddharthsingh45767@gmail.com
+<header>
+    <!--left box for logo-->
+<div class="left">
+<img src="gym_logo.jpg" alt="">
+<div>Roman Fitness Gym</div>
 
-<!---
-siddharthsingh650/siddharthsingh650 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Add your project cards here -->
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: siddhsingh650@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/siddharth-singh-1b9893247" target="_blank">LinkedIn Profile</a></p>
-    </section>
-    <script src="script.js"></script>
+<h1 class="hide-below-480">FREESTYLE™ GROUP TRAINING</h1>
+<div class="section-inner">
+    <p>Our Freestyle Group Training (FGT) is a combination of&nbsp;three-dimensional training movements that will challenge your muscles to move you in the way nature intended. Each of the challenging FGT classes are designed to help you reach your goals, whilst improving your everyday movement ability. This creates a workout that gives maximum results whilst making everyday activities easier to undertake. With FGT each workout is different.</p>
+
+<p>It’s all about training in&nbsp;three planes of motion; everyone can get involved due to the large range of weights and equipment that we offer, plus everyone will benefit from the training.</p>
+</div>
+</div>
+<!--mid box for navbar-->
+<div class="mid"> 
+<ul class="navbar">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">Fitness Goal</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<!--right box for buttons-->
+<div class="right">
+    <a href="/try-us">Try us</a>
+</div>
+
+</header>
 </body>
-</html>
+</html
